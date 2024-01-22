@@ -6,3 +6,5 @@
 - fix projects/sample/src/public-api.ts
 - npm i
 - npm run build sample
+
+add fix
