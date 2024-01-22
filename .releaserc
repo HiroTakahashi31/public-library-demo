@@ -1,0 +1,18 @@
+{
+  "branches":["master"],
+  "plugins": [
+    "@semantic-release/commit-analyzer",
+    "@semantic-release/release-notes-generator",
+    ["@semantic-release/npm",{"pkgRoot":"dist/sample"}],
+    "@semantic-release/github"
+  ],
+  "publish":[
+    {
+      "path": "@semantic-release/npm",
+      "registry": "https://npm.pkg.github.com"
+    },
+    {
+      "path": "@semantic-release/github"
+    }
+  ]
+}
