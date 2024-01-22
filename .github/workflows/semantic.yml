@@ -31,6 +31,7 @@ jobs:
       - name: Build
         run: |
           npm run build sample
+          cd dist/sample
       - name: Release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
